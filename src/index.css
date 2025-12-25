@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Design Tokens */
+@theme {
+  --color-bg: #ffffff;
+  --color-primary: #0e1b2e;
+  --color-secondary: #1a2f4a;
+  --color-steel: #1e293b;
+  --color-muted: #475569;
+  --color-border: #e2e8f0;
+  --color-surface: #0f172a;
+
+  /* Fonts */
+  --font-primary: Inter, system-ui, sans-serif;
+  --font-secondary: Poppins, system-ui, sans-serif;
+}
+
+@utility font-primary {
+  font-family: var(--font-primary);
+}
+
+@utility font-secondary {
+  font-family: var(--font-secondary);
+}
+
+html {
+  scroll-behavior: smooth;
+}

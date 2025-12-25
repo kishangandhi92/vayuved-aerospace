@@ -1,0 +1,101 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* :root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/*[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+:root {
+  --ifm-color-primary: #0b1c33;
+  --ifm-color-primary-dark: #0a192e;
+  --ifm-color-primary-darker: #09182b;
+  --ifm-color-primary-darkest: #081424;
+  --ifm-color-primary-light: #0c1f38;
+  --ifm-color-primary-lighter: #0d203b;
+  --ifm-color-primary-lightest: #0e2442;
+  --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-heading-font-family: "Poppins", sans-serif;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+.navbar__title {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer--dark {
+  background-color: var(--ifm-color-primary);
+}
+
+/* Footer base */
+.footer {
+  background: linear-gradient(180deg, #0b1a2d 0%, #081426 100%);
+  padding-top: 4rem;
+}
+
+/* Footer titles */
+.footer__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Footer links */
+.footer__item a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer__item a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Company description text */
+.footer__company-desc {
+  pointer-events: none;
+  cursor: default;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 360px;
+  white-space: normal;
+}
+
+/* Divider */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+/* Copyright */
+.footer__copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
