@@ -6,14 +6,14 @@ export default function Hero() {
       {/* Left Content */}
       <div>
         <h1 className="text-4xl lg:text-5xl tracking-tight text-primary font-secondary">
-          Mission-Critical Flight Control Systems
-          <br />
-          Engineered for Reliability
+          Engineering deterministic flight control systems for defence,
+          research, and professional UAV programs
         </h1>
 
         <p className="mt-6 max-w-xl text-lg text-muted">
-          Defence-grade flight control units designed and manufactured in India
-          for stable, deterministic UAV operations.
+          Our flight control units are engineered for predictable system
+          behaviour, stability, and repeatable performance under real-world UAV
+          operating conditions.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
