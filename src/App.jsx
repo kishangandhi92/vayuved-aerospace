@@ -5,6 +5,7 @@ import Footer from "./components/common/Footer";
 import ScrollToTop from "./components/common/ScrollToTop";
 
 import Home from "./components/pages/Home";
+import NotFound from "./components/pages/NotFound";
 
 export default function App() {
   return (
@@ -20,6 +21,9 @@ export default function App() {
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
+
+          {/* 404 MUST be last */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />
