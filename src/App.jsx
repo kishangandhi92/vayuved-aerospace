@@ -1,27 +1,29 @@
-import Pillars from "./components/Pillars";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import EngineeringCapabilities from "./components/EngineeringCapabilities";
-import ContactSection from "./components/ContactSection";
-import AboutSection from "./components/AboutSection";
-import DocumentationSection from "./components/DocumentationSection";
-import ScrollToTop from "./components/ScrollToTop";
-import ProductsSection from "./components/ProductsSection";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
+import ScrollToTop from "./components/common/ScrollToTop";
+
+import Home from "./components/pages/Home";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-bg text-steel font-primary">
-      <Header />
-      <Hero />
-      <Pillars />
-      <ProductsSection />
-      <EngineeringCapabilities />
-      <DocumentationSection />
-      <AboutSection />
-      <ContactSection />
-      <Footer />
+    <Router>
       <ScrollToTop />
-    </div>
+
+      <div className="min-h-screen bg-bg text-steel font-primary">
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/products" element={<Products />} />
+          <Route path="/documentation" element={<Documentation />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} /> */}
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
