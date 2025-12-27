@@ -1,14 +1,16 @@
 import { useState } from "react";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 
 export default function ContactForm({ product, onSuccess }) {
-  const [form, setForm] = useState({
+  const initialForm = {
     name: "",
     email: "",
     mobile: "",
     message: "",
-  });
+    company: "", // honeypot
+  };
 
+  const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -55,12 +57,11 @@ export default function ContactForm({ product, onSuccess }) {
           type: "success",
           message: data.message || "Inquiry sent successfully",
         });
-        setForm({
-          name: "",
-          email: "",
-          mobile: "",
-          message: "",
-        });
+
+        // Auto-reset form
+        setForm(initialForm);
+
+        // Optional: auto-close modal
         setTimeout(() => {
           onSuccess();
         }, 3000);
@@ -111,7 +112,9 @@ export default function ContactForm({ product, onSuccess }) {
           <input
             type="text"
             placeholder="Full Name"
-            className="w-full input"
+            className={`w-full input ${
+              errors.name ? "!border-red-500 focus:border-red-500" : ""
+            }`}
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
           />
@@ -123,7 +126,9 @@ export default function ContactForm({ product, onSuccess }) {
           <input
             type="email"
             placeholder="Email Address"
-            className="w-full input"
+            className={`w-full input ${
+              errors.email ? "!border-red-500 focus:border-red-500" : ""
+            }`}
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
           />
@@ -135,7 +140,9 @@ export default function ContactForm({ product, onSuccess }) {
           <input
             type="tel"
             placeholder="Mobile Number"
-            className="w-full input"
+            className={`w-full input ${
+              errors.mobile ? "!border-red-500 focus:border-red-500" : ""
+            }`}
             value={form.mobile}
             onChange={(e) => setForm({ ...form, mobile: e.target.value })}
           />
@@ -155,20 +162,64 @@ export default function ContactForm({ product, onSuccess }) {
           <textarea
             placeholder="Message"
             rows="4"
-            className="w-full input"
+            className={`w-full input ${
+              errors.message ? "!border-red-500 focus:border-red-500" : ""
+            }`}
             value={form.message}
             onChange={(e) => setForm({ ...form, message: e.target.value })}
           />
           {errors.message && <p className="form-error">{errors.message}</p>}
         </div>
 
-        {/* Submit */}
+        <input
+          type="text"
+          name="company"
+          value={form.company}
+          onChange={(e) =>
+            setForm((prev) => ({ ...prev, company: e.target.value }))
+          }
+          className="hidden"
+          tabIndex="-1"
+          autoComplete="off"
+        />
+
         <button
           type="submit"
           disabled={loading}
-          className="w-full cursor-pointer bg-primary text-white py-3 rounded-lg font-medium hover:bg-surface transition disabled:opacity-50"
+          className="
+    w-full cursor-pointer
+    bg-primary text-white
+    py-3 rounded-lg font-medium
+    transition
+    hover:bg-surface
+    disabled:opacity-50
+    disabled:cursor-not-allowed
+    flex items-center justify-center gap-2
+  "
         >
-          {loading ? "Submitting..." : "Submit Inquiry"}
+          {loading && (
+            <svg
+              className="h-4 w-4 animate-spin text-white"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+              />
+            </svg>
+          )}
+
+          <span>{loading ? "Submitting..." : "Submit Inquiry"}</span>
         </button>
       </form>
     </>

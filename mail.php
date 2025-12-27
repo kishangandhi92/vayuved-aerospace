@@ -20,6 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 // Read JSON body
 $input = json_decode(file_get_contents("php://input"), true);
 
+// Honeypot check
+$honeypot = trim($input["company"] ?? "");
+if ($honeypot !== "") {
+  // Silent fail – pretend success to confuse bots
+  echo json_encode([
+    "status" => true,
+    "message" => "Inquiry sent successfully.",
+  ]);
+  exit;
+}
+
 // Sanitize inputs
 $name    = trim($input["name"] ?? "");
 $email   = trim($input["email"] ?? "");
