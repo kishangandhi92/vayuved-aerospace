@@ -5,7 +5,7 @@ import Logo from "../../assets/logo.png";
 const NAV_ITEMS = [
   { label: "Engineering", to: "/engineering" },
   { label: "Products", to: "/products" },
-  { label: "Documentation", to: "/documentation" },
+  { label: "Documentation", to: "https://docs.vayuved.com" },
   { label: "About", to: "/about" },
 ];
 
