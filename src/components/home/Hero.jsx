@@ -4,7 +4,7 @@ import BannerImage from "../../assets/banners/banner.png";
 
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="max-w-7xl mx-auto px-6 py-10 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       {/* Left Content */}
       <div>
         <h1 className="text-4xl lg:text-5xl tracking-tight text-primary font-secondary">

@@ -59,7 +59,7 @@ $body = '
     <table cellpadding="10" style="width:100%;max-width:600px;border:1px solid #e1e1e1;color:#5d5d5d;border-radius:15px">
         <tr>
             <td align="center">
-                <img alt="Vayuved Aerospace" height="100px" src="https://vayuved.kvkghatkopar.in/logo.png">
+                <img alt="Vayuved Aerospace" height="100px" src="https://test.vayuved.com/logo.png">
             </td>
         </tr>
         <tr>
