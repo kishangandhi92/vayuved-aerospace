@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../../assets/logo.png";
 
 const NAV_ITEMS = [
   { label: "Engineering", to: "/engineering" },
@@ -63,7 +64,7 @@ export default function Header() {
           to="/"
           className="text-xl font-semibold tracking-tight text-primary"
         >
-          Vayuved
+          <img src={Logo} alt="Vayuved Logo" className="h-10 w-auto" />
         </NavLink>
 
         {/* Desktop Navigation */}
