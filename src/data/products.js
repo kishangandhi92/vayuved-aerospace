@@ -31,7 +31,7 @@ export const products = [
   },
   {
     id: "h7-fcu",
-    title: "H7 FCU",
+    title: "SAMPATHI - I",
     status: "Active Development",
     statusStyle: "info",
     description:

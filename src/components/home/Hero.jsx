@@ -1,4 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
+import BannerImage from "../../assets/banners/hero.png";
+// import BannerImage from "../../assets/banners/hero2.jpg";
 
 export default function Hero() {
   return (
@@ -6,15 +8,14 @@ export default function Hero() {
       {/* Left Content */}
       <div>
         <h1 className="text-4xl lg:text-5xl tracking-tight text-primary font-secondary">
-          Engineering deterministic flight control systems for defence,
-          research, and professional UAV programs
+          Mission Critical Flight Control Systems Engineered for Reliability
         </h1>
 
-        <p className="mt-6 max-w-xl text-lg text-muted">
+        {/* <p className="mt-6 max-w-xl text-lg text-muted">
           Our flight control units are engineered for predictable system
           behaviour, stability, and repeatable performance under real-world UAV
           operating conditions.
-        </p>
+        </p> */}
 
         <p className="mt-6 max-w-xl text-lg text-muted">
           Our design philosophy emphasizes clear system interfaces, robust
@@ -41,7 +42,11 @@ export default function Hero() {
 
       {/* Right Visual Placeholder */}
       <div className="h-[360px] rounded-xl bg-surface flex items-center justify-center">
-        <span className="text-muted text-sm">System Architecture Visual</span>
+        <img
+          src={BannerImage}
+          alt="System Architecture Visual"
+          className="w-full h-full object-cover rounded-xl"
+        />
       </div>
     </section>
   );
