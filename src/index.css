@@ -26,3 +26,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+.input {
+  @apply border border-black/10 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-primary;
+}
+
+.form-error {
+  @apply mt-1 text-xs text-red-500;
+}

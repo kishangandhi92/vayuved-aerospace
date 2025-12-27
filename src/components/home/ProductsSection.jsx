@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { products } from "../../data/products";
+import Modal from "../common/Modal";
+import ContactForm from "../common/ContactForm";
 
 export default function ProductsSection() {
   return (
@@ -40,9 +43,12 @@ function ProductCard({
     neutral: "bg-gray-200 text-gray-700",
   };
 
+  const [open, setOpen] = useState(false);
+
   return (
-    <div
-      className={`
+    <>
+      <div
+        className={`
         rounded-2xl border border-black/5
         p-8
         flex flex-col
@@ -50,49 +56,49 @@ function ProductCard({
         hover:shadow-md
         ${emphasize ? "bg-secondary text-white" : "bg-gray-100"}
       `}
-    >
-      {/* Header */}
-      <div>
-        <div className="flex items-center justify-between">
-          <h3
-            className={`font-secondary text-2xl ${
-              emphasize ? "text-white" : "text-ink"
+      >
+        {/* Header */}
+        <div>
+          <div className="flex items-center justify-between">
+            <h3
+              className={`font-secondary text-2xl ${
+                emphasize ? "text-white" : "text-ink"
+              }`}
+            >
+              {title}
+            </h3>
+
+            <span
+              className={`text-xs px-3 py-1 rounded-full font-primary ${statusClasses[statusStyle]}`}
+            >
+              {status}
+            </span>
+          </div>
+
+          {/* Description */}
+          <p
+            className={`mt-4 leading-relaxed ${
+              emphasize ? "text-white/80" : "text-steel"
             }`}
           >
-            {title}
-          </h3>
+            {description}
+          </p>
 
-          <span
-            className={`text-xs px-3 py-1 rounded-full font-primary ${statusClasses[statusStyle]}`}
+          {/* Features */}
+          <ul
+            className={`mt-6 mb-2 space-y-2 text-sm list-disc list-inside ${
+              emphasize ? "text-white/80" : "text-steel"
+            }`}
           >
-            {status}
-          </span>
+            {features.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
         </div>
 
-        {/* Description */}
-        <p
-          className={`mt-4 leading-relaxed ${
-            emphasize ? "text-white/80" : "text-steel"
-          }`}
-        >
-          {description}
-        </p>
-
-        {/* Features */}
-        <ul
-          className={`mt-6 mb-2 space-y-2 text-sm list-disc list-inside ${
-            emphasize ? "text-white/80" : "text-steel"
-          }`}
-        >
-          {features.map((feature, index) => (
-            <li key={index}>{feature}</li>
-          ))}
-        </ul>
-      </div>
-
-      {/* CTA — ALWAYS BOTTOM */}
-      <button
-        className={`
+        {/* CTA — ALWAYS BOTTOM */}
+        <button
+          className={`
           mt-auto
           w-full
           rounded-lg
@@ -107,9 +113,21 @@ function ProductCard({
               : "border border-ink text-ink hover:bg-surface hover:text-white"
           }
         `}
-      >
-        Inquire
-      </button>
-    </div>
+          onClick={() => setOpen(true)}
+        >
+          Inquire
+        </button>
+      </div>
+
+      {/* Modal */}
+      <Modal open={open} onClose={() => setOpen(false)}>
+        <ContactForm
+          product={title}
+          onSuccess={() => {
+            setOpen(false);
+          }}
+        />
+      </Modal>
+    </>
   );
 }
