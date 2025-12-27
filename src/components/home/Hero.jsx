@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Left Content */}
       <div>
         <h1 className="text-4xl lg:text-5xl tracking-tight text-primary font-secondary">
-          Mission Critical Flight Control Systems Engineered for Reliability
+          Mission-Critical Flight Control Systems Engineered for Reliability
         </h1>
 
         {/* <p className="mt-6 max-w-xl text-lg text-muted">
