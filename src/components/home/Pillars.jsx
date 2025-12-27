@@ -1,22 +1,31 @@
+import SystemIcon from "../../assets/icons/system.png";
+import SensorIcon from "../../assets/icons/sensors.png";
+import PowerIcon from "../../assets/icons/power.png";
+import EnvironmentIcon from "../../assets/icons/environment.png";
+
 export default function Pillars() {
   const pillars = [
     {
       title: "Deterministic Control Architecture",
+      icon: SystemIcon,
       description:
         "Predictable, real-time control loops with guaranteed response times for mission-critical operations.",
     },
     {
       title: "Redundant Sensor Design",
+      icon: SensorIcon,
       description:
         "Multi-sensor fusion with automatic failover mechanisms ensuring continuous system operation.",
     },
     {
       title: "Wide Power Input Support",
+      icon: PowerIcon,
       description:
         "Operates reliably across extended voltage ranges for diverse platform integration requirements.",
     },
     {
       title: "Built for Harsh Environments",
+      icon: EnvironmentIcon,
       description:
         "Engineered for extreme temperatures, vibration, and electromagnetic interference conditions.",
     },
@@ -46,8 +55,8 @@ export default function Pillars() {
   "
             >
               {/* Icon Placeholder */}
-              <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-md bg-gray-100 text-ink">
-                <span className="block h-4 w-4 border-2 border-ink rounded-sm" />
+              <div className="mb-6 flex h-12 w-12 items-center justify-center">
+                <img src={pillar.icon} alt={pillar.title} />
               </div>
 
               <h3 className="font-secondary text-lg text-ink">

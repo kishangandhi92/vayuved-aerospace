@@ -16,6 +16,12 @@ export default function Hero() {
           operating conditions.
         </p>
 
+        <p className="mt-6 max-w-xl text-lg text-muted">
+          Our design philosophy emphasizes clear system interfaces, robust
+          control loops, and disciplined system architecture to support reliable
+          drone and unmanned aerial vehicle operations.
+        </p>
+
         <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="#contact"

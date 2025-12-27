@@ -1,6 +1,14 @@
+import FlightControlArchitectureIcon from "../../assets/icons/air-traffic-controller.png";
+import RealTimeEmbeddedSystemsIcon from "../../assets/icons/real-time-embedded-systems.png";
+import SensorIntegrationIcon from "../../assets/icons/sensor-integration.png";
+import ControlActuationSystemsIcon from "../../assets/icons/control-actuation-systems.png";
+import OnboardComputeVisionIcon from "../../assets/icons/onboard-compute-vision.png";
+import HardwareSystemIntegrationIcon from "../../assets/icons/hardware-system-integration.png";
+
 const capabilities = [
   {
     title: "Flight Control Architecture",
+    icon: FlightControlArchitectureIcon,
     description:
       "Design of deterministic flight control architectures with clear task separation, timing guarantees, and well-defined system boundaries.",
     bullets: [
@@ -11,6 +19,7 @@ const capabilities = [
   },
   {
     title: "Real-time Embedded Systems",
+    icon: RealTimeEmbeddedSystemsIcon,
     description:
       "Development of real-time embedded systems focused on predictable execution, low latency, and stable operation under dynamic UAV conditions.",
     bullets: [
@@ -21,6 +30,7 @@ const capabilities = [
   },
   {
     title: "Sensor Integration & Estimation",
+    icon: SensorIntegrationIcon,
     description:
       "Integration of inertial, environmental, and navigation sensors with attention to calibration, synchronization, and sensor fusion readiness.",
     bullets: [
@@ -31,6 +41,7 @@ const capabilities = [
   },
   {
     title: "Control & Actuation Systems",
+    icon: ControlActuationSystemsIcon,
     description:
       "Design of control algorithms and actuation paths with emphasis on deterministic behavior, precise timing, and stable motor response.",
     bullets: [
@@ -41,6 +52,7 @@ const capabilities = [
   },
   {
     title: "Onboard Compute & Vision",
+    icon: OnboardComputeVisionIcon,
     description:
       "System-level integration of onboard compute for vision, perception, and autonomy workloads alongside real-time flight control.",
     bullets: [
@@ -51,6 +63,7 @@ const capabilities = [
   },
   {
     title: "Hardware & System Integration",
+    icon: HardwareSystemIntegrationIcon,
     description:
       "End-to-end hardware design covering schematics, layout, power architecture, thermal considerations, and mechanical integration.",
     bullets: [
@@ -94,8 +107,12 @@ export default function EngineeringCapabilities() {
               "
             >
               {/* Icon Placeholder */}
-              <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center mb-6">
-                <div className="w-5 h-5 rounded border border-white/40" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                <img
+                  src={capability.icon}
+                  alt={capability.title}
+                  className=""
+                />
               </div>
 
               {/* Title */}
