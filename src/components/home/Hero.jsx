@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import BannerImage from "../../assets/banners/hero.png";
+import BannerImage from "../../assets/banners/banner.png";
 // import BannerImage from "../../assets/banners/hero2.jpg";
 
 export default function Hero() {
@@ -25,7 +25,7 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-            href="#contact"
+            href="mailto:engineering@vayuved.com"
             className="inline-flex items-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-white hover:bg-surface"
           >
             Talk to Engineering <FaArrowRight className="ml-2" />

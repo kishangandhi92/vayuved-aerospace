@@ -64,7 +64,7 @@ export default function Header() {
           to="/"
           className="text-xl font-semibold tracking-tight text-primary"
         >
-          <img src={Logo} alt="Vayuved Logo" className="h-10 w-auto" />
+          <img src={Logo} alt="Vayuved Logo" className="h-12 w-auto" />
         </NavLink>
 
         {/* Desktop Navigation */}
