@@ -63,7 +63,7 @@ export default function ContactSection() {
             href="mailto:engineering@vayuved.com"
             className="
               inline-flex items-center gap-2
-              bg-surface text-white
+              bg-primary text-white
               px-6 py-3
               rounded-lg
               font-primary

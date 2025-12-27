@@ -44,57 +44,63 @@ function ProductCard({
     <div
       className={`
         rounded-2xl border border-black/5
-        p-8 flex flex-col
+        p-8
+        flex flex-col
         transition
         hover:shadow-md
-
-        ${emphasize ? "bg-secondary text-white" : "bg-gray-100 text-steel"}
+        ${emphasize ? "bg-secondary text-white" : "bg-gray-100"}
       `}
     >
-      {/* Title + Status */}
-      <div className="flex items-center justify-between">
-        <h3
-          className={`font-secondary text-2xl ${
-            emphasize ? "text-white" : "text-primary"
+      {/* Header */}
+      <div>
+        <div className="flex items-center justify-between">
+          <h3
+            className={`font-secondary text-2xl ${
+              emphasize ? "text-white" : "text-ink"
+            }`}
+          >
+            {title}
+          </h3>
+
+          <span
+            className={`text-xs px-3 py-1 rounded-full font-primary ${statusClasses[statusStyle]}`}
+          >
+            {status}
+          </span>
+        </div>
+
+        {/* Description */}
+        <p
+          className={`mt-4 leading-relaxed ${
+            emphasize ? "text-white/80" : "text-steel"
           }`}
         >
-          {title}
-        </h3>
-        <span
-          className={`text-xs px-3 py-1 rounded-full font-primary ${statusClasses[statusStyle]}`}
+          {description}
+        </p>
+
+        {/* Features */}
+        <ul
+          className={`mt-6 mb-2 space-y-2 text-sm list-disc list-inside ${
+            emphasize ? "text-white/80" : "text-steel"
+          }`}
         >
-          {status}
-        </span>
+          {features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
       </div>
 
-      {/* Description */}
-      <p
-        className={`mt-4 font-primary leading-relaxed ${
-          emphasize ? "text-white/85" : "text-steel"
-        }`}
-      >
-        {description}
-      </p>
-
-      {/* Features */}
-      <ul
-        className={`mt-6 space-y-2 text-sm list-disc list-inside ${
-          emphasize ? "text-white/80" : "text-steel"
-        }`}
-      >
-        {features.map((feature, index) => (
-          <li key={index}>{feature}</li>
-        ))}
-      </ul>
-
-      {/* CTA */}
+      {/* CTA — ALWAYS BOTTOM */}
       <button
         className={`
-          mt-8 w-full py-2.5 rounded-lg
-          font-primary text-sm
+          mt-auto
+          w-full
+          rounded-lg
+          py-2.5
+          font-primary
+          text-sm
           transition
           cursor-pointer
-
           ${
             emphasize
               ? "bg-white text-secondary hover:bg-white/90"
