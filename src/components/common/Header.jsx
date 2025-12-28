@@ -28,13 +28,35 @@ export default function Header() {
   }, []);
 
   const renderNavLinks = (isMobile = false) =>
-    NAV_ITEMS.map(({ label, to }) => (
-      <NavLink
-        key={label}
-        to={to}
-        onClick={() => isMobile && setOpen(false)}
-        className={({ isActive }) =>
-          `
+    NAV_ITEMS.map(({ label, to }) => {
+      // Check if the link is external
+      const isExternal = to.startsWith("http");
+
+      if (isExternal) {
+        return (
+          <a
+            key={label}
+            href={to}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`
+            transition-colors
+            ${isMobile ? "py-1" : ""}
+            text-muted hover:text-primary
+          `}
+            onClick={() => isMobile && setOpen(false)}
+          >
+            {label}
+          </a>
+        );
+      }
+
+      return (
+        <NavLink
+          key={label}
+          to={to}
+          onClick={() => isMobile && setOpen(false)}
+          className={({ isActive }) => `
           transition-colors
           ${isMobile ? "py-1" : ""}
           ${
@@ -42,12 +64,12 @@ export default function Header() {
               ? "text-primary font-medium"
               : "text-muted hover:text-primary"
           }
-        `
-        }
-      >
-        {label}
-      </NavLink>
-    ));
+        `}
+        >
+          {label}
+        </NavLink>
+      );
+    });
 
   return (
     <header

@@ -25,20 +25,24 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm font-primary">
               <li>
                 <a
-                  href="#products"
+                  href="/products"
                   className="hover:text-white transition-colors"
                 >
                   Products
                 </a>
               </li>
               <li>
-                <a href="#docs" className="hover:text-white transition-colors">
+                <a
+                  href="https://docs.vayuved.com"
+                  target="_blank"
+                  className="hover:text-white transition-colors"
+                >
                   Documentation
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="hover:text-white transition-colors"
                 >
                   Contact
