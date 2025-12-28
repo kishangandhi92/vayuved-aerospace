@@ -52,7 +52,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Email setup
-$to = "kishangandhi9223@gmail.com"; // add more if needed
+$to = "engineering@vayuved.com,kishangandhi9223@gmail.com"; // add more if needed
 $subject = "New Product Inquiry – " . ($product ?: "Website");
 
 $body = '
