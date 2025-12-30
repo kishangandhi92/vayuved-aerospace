@@ -36,6 +36,7 @@ function ProductCard({
   description,
   features,
   emphasize = false,
+  link,
 }) {
   const statusClasses = {
     success: "bg-green-100 text-green-700",
@@ -65,7 +66,7 @@ function ProductCard({
                 emphasize ? "text-white" : "text-ink"
               }`}
             >
-              {title}
+              <a href={link}>{title}</a>
             </h3>
 
             <span

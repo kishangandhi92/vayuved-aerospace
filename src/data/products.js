@@ -14,6 +14,7 @@ export const products = [
       "Mechanically isolated IMU assembly for vibration attenuation",
       "Expanded peripheral support for complex UAV integrations",
     ],
+    link: "/products/jta-01",
   },
   {
     id: "jta-02",
@@ -28,6 +29,7 @@ export const products = [
       "Tight FCU–companion integration for low-latency data exchange",
       "Wide input power support (3.3 V–18 V) for flexible UAV power architectures",
     ],
+    link: "/products/jta-02",
   },
   {
     id: "h7-fcu",
@@ -42,6 +44,7 @@ export const products = [
       "Simplified, performance-focused design for FPV and interceptor UAVs",
       "Supports high-speed peripherals and fast sensor-to-actuator paths",
     ],
+    link: "/products/sampathi-1",
   },
   {
     id: "jta-03",
@@ -56,5 +59,6 @@ export const products = [
       "System architecture derived from JTA-02 with tightly coupled control and compute",
       "Designed for high-performance UAV platforms requiring control and perception at scale",
     ],
+    link: "/products/jta-03",
   },
 ];
