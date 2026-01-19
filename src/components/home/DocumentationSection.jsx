@@ -3,7 +3,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 export default function DocumentationSection() {
   return (
-    <section id="docs" className="bg-gray-100 py-24">
+    <section className="bg-gray-100 py-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left Content */}
         <div>

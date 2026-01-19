@@ -10,6 +10,7 @@ import NotFound from "./components/pages/NotFound";
 import { Toaster } from "react-hot-toast";
 import SAMPATHI1 from "./components/pages/sampathi-1";
 import RouteScrollToTop from "./components/common/RouteScrollToTop";
+import About from "./components/pages/About";
 
 export default function App() {
   return (
@@ -24,9 +25,10 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products/jta-01" element={<JTA01 />} />
           <Route path="/products/sampathi-1" element={<SAMPATHI1 />} />
+          <Route path="/about" element={<About />} />
           {/* <Route path="/products" element={<Products />} />
           <Route path="/documentation" element={<Documentation />} />
-          <Route path="/about" element={<About />} />
+          
           <Route path="/contact" element={<Contact />} /> */}
 
           {/* 404 MUST be last */}
