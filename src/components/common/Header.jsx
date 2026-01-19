@@ -1,16 +1,25 @@
 import { useState, useEffect } from "react";
+import { FaChevronDown } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 
 const NAV_ITEMS = [
   { label: "Engineering", to: "/engineering" },
-  { label: "Products", to: "/products" },
+  { label: "Products", to: "/products", hasSubmenu: true },
   { label: "Documentation", to: "https://docs.vayuved.com" },
   { label: "About", to: "/about" },
 ];
 
+const PRODUCT_ITEMS = [
+  { label: "JTA-01", to: "/products/jta-01" },
+  { label: "SAMPATHI-1 FCU", to: "/products/sampathi-1" },
+  { label: "JTA-02", to: "/products/jta-02" },
+  { label: "JTA-03", to: "/products/jta-03" },
+];
+
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
 
   useEffect(() => {
     const header = document.querySelector("header");
@@ -28,10 +37,77 @@ export default function Header() {
   }, []);
 
   const renderNavLinks = (isMobile = false) =>
-    NAV_ITEMS.map(({ label, to }) => {
-      // Check if the link is external
+    NAV_ITEMS.map(({ label, to, hasSubmenu }) => {
       const isExternal = to.startsWith("http");
 
+      /* ---------- PRODUCTS (WITH SUBMENU) ---------- */
+      if (hasSubmenu) {
+        return (
+          <div
+            key={label}
+            className={`relative ${isMobile ? "" : "group"} py-1`}
+          >
+            {/* Parent */}
+            <button
+              onClick={() => isMobile && setProductsOpen(!productsOpen)}
+              className={`
+                flex items-center gap-1
+                transition-colors
+                ${isMobile ? "py-1" : ""}
+                text-muted hover:text-primary
+              `}
+            >
+              {label}
+              <span className="text-xs"><FaChevronDown /></span>
+            </button>
+
+            {/* Desktop Dropdown */}
+            {!isMobile && (
+              <div
+                className="
+                  absolute left-0 top-full mt-0
+                  hidden group-hover:block
+                  w-64 rounded-lg bg-white shadow-lg border border-black/5
+                  z-50
+                "
+              >
+                <div className="py-2">
+                  {PRODUCT_ITEMS.map((item) => (
+                    <NavLink
+                      key={item.label}
+                      to={item.to}
+                      className="block px-4 py-2 text-sm text-muted hover:bg-gray-50 hover:text-primary"
+                    >
+                      {item.label}
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Mobile Submenu */}
+            {isMobile && productsOpen && (
+              <div className="mt-2 ml-3 flex flex-col gap-4">
+                {PRODUCT_ITEMS.map((item) => (
+                  <NavLink
+                    key={item.label}
+                    to={item.to}
+                    onClick={() => {
+                      setOpen(false);
+                      setProductsOpen(false);
+                    }}
+                    className="text-sm text-muted hover:text-primary"
+                  >
+                    {item.label}
+                  </NavLink>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      }
+
+      /* ---------- REGULAR LINKS ---------- */
       if (isExternal) {
         return (
           <a
@@ -40,10 +116,10 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className={`
-            transition-colors
-            ${isMobile ? "py-1" : ""}
-            text-muted hover:text-primary
-          `}
+              transition-colors
+              ${isMobile ? "py-1" : ""}
+              text-muted hover:text-primary
+            `}
             onClick={() => isMobile && setOpen(false)}
           >
             {label}
@@ -57,19 +133,20 @@ export default function Header() {
           to={to}
           onClick={() => isMobile && setOpen(false)}
           className={({ isActive }) => `
-          transition-colors
-          ${isMobile ? "py-1" : ""}
-          ${
-            isActive
-              ? "text-primary font-medium"
-              : "text-muted hover:text-primary"
-          }
-        `}
+            transition-colors
+            ${isMobile ? "py-1" : ""}
+            ${
+              isActive
+                ? "text-primary font-medium"
+                : "text-muted hover:text-primary"
+            }
+          `}
         >
           {label}
         </NavLink>
       );
     });
+
 
   return (
     <header
@@ -139,7 +216,7 @@ export default function Header() {
       >
         <nav
           className={`
-      px-6 py-6 flex flex-col gap-4 text-sm
+      px-6 py-3 flex flex-col gap-3 
       transform transition-transform duration-300 ease-out
       ${open ? "translate-y-0" : "-translate-y-2"}
     `}
@@ -149,7 +226,7 @@ export default function Header() {
           <NavLink
             to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-medium text-white hover:bg-surface"
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 font-medium text-white hover:bg-surface"
           >
             Talk to Engineering
           </NavLink>
