@@ -32,7 +32,8 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://docs.vayuved.com"
+          target="_blank"
+            href="https://docs.vayuved.com/category/product---jta-01"
             className="inline-flex items-center rounded-md border-2 border-primary px-6 py-3 text-sm font-medium text-primary hover:bg-gray-100"
           >
             View Product Documentation

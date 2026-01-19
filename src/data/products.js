@@ -29,7 +29,7 @@ export const products = [
       "Tight FCU–companion integration for low-latency data exchange",
       "Wide input power support (3.3 V–18 V) for flexible UAV power architectures",
     ],
-    link: "/products/jta-02",
+    link: "",
   },
   {
     id: "h7-fcu",
@@ -59,6 +59,6 @@ export const products = [
       "System architecture derived from JTA-02 with tightly coupled control and compute",
       "Designed for high-performance UAV platforms requiring control and perception at scale",
     ],
-    link: "/products/jta-03",
+    link: "",
   },
 ];

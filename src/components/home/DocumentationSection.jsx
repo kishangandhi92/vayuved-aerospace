@@ -20,7 +20,8 @@ export default function DocumentationSection() {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="https://docs.vayuved.com"
+            target="_blank"
+              href="https://docs.vayuved.com/category/product---jta-01"
               className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-primary text-sm hover:bg-ink/90 transition"
             >
               <IoDocumentTextOutline size={18} />

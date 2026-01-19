@@ -4,24 +4,17 @@ import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 
 const NAV_ITEMS = [
-  { label: "Engineering", to: "/engineering" },
+  { label: "Home", to: "/" },
   { label: "Products", to: "/products", hasSubmenu: true },
-  { label: "Documentation", to: "https://docs.vayuved.com" },
-  { label: "About", to: "/about" },
-];
-
-const PRODUCT_ITEMS = [
-  { label: "JTA-01", to: "/products/jta-01" },
-  { label: "SAMPATHI-1 FCU", to: "/products/sampathi-1" },
-  { label: "JTA-02", to: "/products/jta-02" },
-  { label: "JTA-03", to: "/products/jta-03" },
+  { label: "Documentation", to: "https://docs.vayuved.com/category/product---jta-01" },
+  { label: "About", to: "" },
 ];
 
 const PRODUCTS = [
   {
     name: "JTA-01",
     description: "Pixhawk FMU v6x RT–Compatible Professional Drone Flight Controller",
-    to: "/products/jta-01",
+  to: "/products/jta-01",
   },
   {
     name: "SAMPATHI-1",
@@ -30,13 +23,13 @@ const PRODUCTS = [
   },
   {
     name: "JTA-02",
-    description: "description",
-    to: "/products/jta-02",
+    description: "Coming soon",
+    to: "#",
   },
   {
     name: "JTA-03",
-    description: "description",
-    to: "/products/jta-03",
+    description: "Coming soon",
+    to: "#",
   },
 ];
 
@@ -211,7 +204,7 @@ export default function Header() {
                   rounded-xl bg-white
                   shadow-xl
                   border border-black/5
-                  p-6
+                  p-3
                 "
               >
                 <div className="grid grid-cols-2 gap-4">
@@ -222,8 +215,9 @@ export default function Header() {
                       className="
                         rounded-lg border border-black/5
                         p-5
+                        bg-gray-50
                         hover:border-primary/40
-                        hover:bg-gray-50
+                        hover:bg-gray-100
                         transition
                       "
                     >
@@ -245,7 +239,7 @@ export default function Header() {
 
           {/* Mobile Mega Menu */}
           {isMobile && productsOpen && (
-            <div className="mt-3 ml-3 flex flex-col gap-4">
+            <div className="mt-3 ml-3 flex flex-col gap-2">
               {PRODUCTS.map((product) => (
                 <NavLink
                   key={product.name}
@@ -257,7 +251,8 @@ export default function Header() {
                   className="
                     rounded-lg border border-black/5
                     p-4
-                    hover:bg-gray-50
+                    bg-gray-50
+                    hover:bg-gray-100
                     transition
                   "
                 >
@@ -336,7 +331,7 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <NavLink
-          to="/contact"
+          to="mailto:engineering@vayuved.com"
           className="hidden md:inline-flex items-center rounded-md bg-primary px-5 py-2 text-sm font-medium text-white hover:bg-surface"
         >
           Talk to Engineering
@@ -387,7 +382,7 @@ export default function Header() {
           {renderNavLinks(true)}
 
           <NavLink
-            to="/contact"
+            to="mailto:engineeringmailto:engineering@vayuved.com"
             onClick={() => setOpen(false)}
             className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 font-medium text-white hover:bg-surface"
           >

@@ -33,7 +33,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://docs.vayuved.com"
+                  href="https://docs.vayuved.com/category/product---jta-01"
                   target="_blank"
                   className="hover:text-white transition-colors"
                 >
