@@ -9,11 +9,13 @@ import JTA01 from "./components/pages/jta-01";
 import NotFound from "./components/pages/NotFound";
 import { Toaster } from "react-hot-toast";
 import SAMPATHI1 from "./components/pages/sampathi-1";
+import RouteScrollToTop from "./components/common/RouteScrollToTop";
 
 export default function App() {
   return (
     <Router>
-      <ScrollToTop />
+      {/* ✅ Route-based scroll reset */}
+      <RouteScrollToTop />
 
       <div className="min-h-screen bg-bg text-steel font-primary">
         <Header />
@@ -32,6 +34,9 @@ export default function App() {
         </Routes>
 
         <Footer />
+
+        {/* ✅ UI scroll button */}
+        <ScrollToTop />
         <Toaster position="top-right" />
       </div>
     </Router>

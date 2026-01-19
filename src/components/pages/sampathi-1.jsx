@@ -20,7 +20,7 @@ export default function SAMPATHI1() {
       </Helmet>
 
       {/* Page Header / Banner */}
-      <section className="bg-surface text-white">
+      <section className="bg-linear-to-r from-surface to-primary text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-15 lg:py-20">
           <div className="max-w-4xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-secondary leading-tight">

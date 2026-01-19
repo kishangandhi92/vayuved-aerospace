@@ -19,7 +19,7 @@ const JTA01 = () => {
         <link rel="canonical" href="https://vayuved.com/products/jta-01" />
       </Helmet>
       {/* Page Header / Banner */}
-      <section className="bg-surface text-white">
+      <section className="bg-linear-to-r from-surface to-primary text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-15 lg:py-20">
           <div className="max-w-4xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-secondary leading-tight">
@@ -207,7 +207,7 @@ const JTA01 = () => {
       {/* Deterministic Motor and Actuator Outputs */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
                 Deterministic Motor and Actuator Outputs
@@ -231,7 +231,7 @@ const JTA01 = () => {
               </p>
             </div>
 
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
@@ -239,7 +239,7 @@ const JTA01 = () => {
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -327,14 +327,14 @@ const JTA01 = () => {
       {/* Navigation-Ready Hardware Design */}
       <section className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
+            {/* <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
                 alt="JTA-01 GPS and Compass Integration"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
@@ -365,7 +365,7 @@ const JTA01 = () => {
       {/* Safety and Failsafe-First Design Philosophy */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
                 Safety and Failsafe-First Design Philosophy
@@ -389,14 +389,14 @@ const JTA01 = () => {
                 feature.
               </p>
             </div>
-
+{/* 
             <div className="w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
                 alt="JTA-01 Safety and Failsafe Flow Diagram"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -404,14 +404,14 @@ const JTA01 = () => {
       {/* Integrated Logging and Diagnostics */}
       <section className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
+            {/* <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
                 alt="JTA-01 Flight Log Analysis View"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
@@ -441,7 +441,7 @@ const JTA01 = () => {
       {/* Ground Control Software Compatibility */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
                 Ground Control Software Compatibility
@@ -463,13 +463,13 @@ const JTA01 = () => {
               </p>
             </div>
 
-            <div className="w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+            {/* <div className="w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
                 alt="JTA-01 Ground Control Software Interface"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -477,14 +477,14 @@ const JTA01 = () => {
       {/* Mechanical and Integration Compatibility */}
       <section className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
+            {/* <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
                 alt="JTA-01 Mounting and Dimensions Render"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
@@ -515,7 +515,7 @@ const JTA01 = () => {
       {/* One Flight Controller for Multiple Platforms */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
                 One Flight Controller for Multiple Platforms
@@ -533,13 +533,13 @@ const JTA01 = () => {
               </p>
             </div>
 
-            <div className="w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+            {/* <div className="w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
                 alt="JTA-01 Multi-Vehicle Platform Illustration"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -547,14 +547,14 @@ const JTA01 = () => {
       {/* Designed for Field Deployment and Maintenance */}
       <section className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
+            {/* <div className="order-2 lg:order-1 w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
                 alt="JTA-01 Field Deployment Scenario"
                 className="w-full h-full object-cover rounded-xl"
               />
-            </div>
+            </div> */}
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">

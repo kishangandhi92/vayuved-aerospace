@@ -2,6 +2,7 @@ import { useState } from "react";
 import { products } from "../../data/products";
 import Modal from "../common/Modal";
 import ContactForm from "../common/ContactForm";
+import { NavLink } from "react-router-dom";
 
 export default function ProductsSection() {
   return (
@@ -66,7 +67,7 @@ function ProductCard({
                 emphasize ? "text-white" : "text-ink"
               }`}
             >
-              <a href={link}>{title}</a>
+              <NavLink to={link}>{title}</NavLink>
             </h3>
 
             <span
