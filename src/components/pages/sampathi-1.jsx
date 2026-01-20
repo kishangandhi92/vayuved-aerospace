@@ -10,6 +10,12 @@ export default function SAMPATHI1() {
         </title>
 
         <meta
+          name="title"
+          content="SAMPATHI-1 Flight Controller | STM32H7 FCU for FPV & Interceptor
+          Drones"
+        />
+
+        <meta
           name="description"
           content="SAMPATHI-1 is an STM32H7-based deterministic flight control unit designed for FPV, racing, and interceptor-class drones requiring low latency and fast control response."
         />
@@ -41,8 +47,12 @@ export default function SAMPATHI1() {
               milliseconds directly impact flight performance.
             </p>
             <p className="mt-3 text-base sm:text-lg text-white/80 leading-relaxed">
-              This product page highlights the <strong> core architectural strengths and
-              unique engineering features</strong> of SAMPATHI-1.
+              This product page highlights the{" "}
+              <strong>
+                {" "}
+                core architectural strengths and unique engineering features
+              </strong>{" "}
+              of SAMPATHI-1.
             </p>
           </div>
         </div>
@@ -123,10 +133,10 @@ export default function SAMPATHI1() {
                 High control-loop performance without architectural complexity.
               </h4>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                SAMPATHI-1 leverages the STM32H7 MCU to deliver {" "}
+                SAMPATHI-1 leverages the STM32H7 MCU to deliver{" "}
                 <strong>
                   high instruction throughput and fast interrupt response
-                </strong>  {" "}
+                </strong>{" "}
                 within a single-core deterministic execution model. This avoids
                 unnecessary scheduling overhead and simplifies real-time control
                 behaviour.
@@ -142,7 +152,7 @@ export default function SAMPATHI1() {
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                This approach is well suited for {" "}
+                This approach is well suited for{" "}
                 <strong>FPV and racing drones,</strong> where simplicity and
                 speed outperform feature-heavy designs.
               </p>
@@ -167,20 +177,21 @@ export default function SAMPATHI1() {
               </h4>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                SAMPATHI-1 is designed with a <strong>noise-aware sensor acquisition path,</strong> ensuring stable inertial measurements during:
+                SAMPATHI-1 is designed with a{" "}
+                <strong>noise-aware sensor acquisition path,</strong> ensuring
+                stable inertial measurements during:
                 <ul className="list-disc list-inside mt-2">
-                  <li>
-                    High-RPM motor operation
-                  </li>
+                  <li>High-RPM motor operation</li>
                   <li>Propeller-induced vibration</li>
-                  <li>
-                    Rapid throttle transitions
-                  </li>
+                  <li>Rapid throttle transitions</li>
                 </ul>
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Careful layout and timing discipline help maintain sensor data integrity, improving attitude estimation accuracy and reducing the need for excessive filtering. This directly benefits flight stability in <strong>high-dynamics UAV platforms.</strong>
+                Careful layout and timing discipline help maintain sensor data
+                integrity, improving attitude estimation accuracy and reducing
+                the need for excessive filtering. This directly benefits flight
+                stability in <strong>high-dynamics UAV platforms.</strong>
               </p>
             </div>
 
@@ -221,19 +232,19 @@ export default function SAMPATHI1() {
               </h4>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                SAMPATHI-1 supports high-rate motor output control, optimised for modern ESC workflows commonly used in FPV and racing ecosystems. Output timing is designed to remain consistent across channels, enabling smooth thrust transitions and predictable response.
+                SAMPATHI-1 supports high-rate motor output control, optimised
+                for modern ESC workflows commonly used in FPV and racing
+                ecosystems. Output timing is designed to remain consistent
+                across channels, enabling smooth thrust transitions and
+                predictable response.
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
                 Benefits include:
                 <ul className="list-disc list-inside mt-2">
                   <li>Improved throttle resolution</li>
-                  <li>
-                    Reduced latency between command and thrust
-                  </li>
-                  <li>
-                    Stable behaviour during aggressive manoeuvres
-                  </li>
+                  <li>Reduced latency between command and thrust</li>
+                  <li>Stable behaviour during aggressive manoeuvres</li>
                 </ul>
               </p>
             </div>
@@ -247,25 +258,35 @@ export default function SAMPATHI1() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
-               Interfaces Designed for FPV and Interceptor Builds
+                Interfaces Designed for FPV and Interceptor Builds
               </h2>
 
               <h4 className="mt-4 text-xl font-medium text-gray-800">
-               Only the interfaces that matter — nothing unnecessary.
+                Only the interfaces that matter — nothing unnecessary.
               </h4>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                SAMPATHI-1 provides a <strong> focused and practical interface set </strong>commonly required in high-dynamics drone builds:
+                SAMPATHI-1 provides a{" "}
+                <strong> focused and practical interface set </strong>commonly
+                required in high-dynamics drone builds:
                 <ul className="list-disc list-inside mt-2">
-                  <li>Multiple UARTs for RC receivers, telemetry, and peripherals</li>
+                  <li>
+                    Multiple UARTs for RC receivers, telemetry, and peripherals
+                  </li>
                   <li>SPI and I²C for sensors and expansion modules</li>
-                  <li>USB for configuration, firmware update, and diagnostics</li>
-                  <li>Motor output interfaces compatible with modern ESC protocols (firmware-dependent)</li>
+                  <li>
+                    USB for configuration, firmware update, and diagnostics
+                  </li>
+                  <li>
+                    Motor output interfaces compatible with modern ESC protocols
+                    (firmware-dependent)
+                  </li>
                 </ul>
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                This interface selection simplifies wiring, reduces integration errors, and supports fast build iteration.
+                This interface selection simplifies wiring, reduces integration
+                errors, and supports fast build iteration.
               </p>
             </div>
 
@@ -306,18 +327,19 @@ export default function SAMPATHI1() {
               </h4>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                SAMPATHI-1 is designed to handle <strong>modern low-latency RC input workflows,</strong> ensuring minimal delay between pilot input and actuator response. Input processing is optimised for stability under high update rates and aggressive manoeuvres.
+                SAMPATHI-1 is designed to handle{" "}
+                <strong>modern low-latency RC input workflows,</strong> ensuring
+                minimal delay between pilot input and actuator response. Input
+                processing is optimised for stability under high update rates
+                and aggressive manoeuvres.
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-               This is critical for:
+                This is critical for:
                 <ul className="list-disc list-inside mt-2">
-                  <li>
-                   FPV freestyle flying
-                  </li>
+                  <li>FPV freestyle flying</li>
                   <li>Competitive racing </li>
-                  <li>Interceptor-class UAV control
-                  </li>
+                  <li>Interceptor-class UAV control</li>
                 </ul>
               </p>
             </div>
@@ -335,7 +357,7 @@ export default function SAMPATHI1() {
               </h2>
 
               <h4 className="mt-4 text-xl font-medium text-gray-800">
-             Controlled responses when conditions deviate from normal.
+                Controlled responses when conditions deviate from normal.
               </h4>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
@@ -349,7 +371,10 @@ export default function SAMPATHI1() {
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Failsafe logic is designed to behave <strong>predictably and consistently,</strong> which is essential for high-speed platforms operating in constrained environments.
+                Failsafe logic is designed to behave{" "}
+                <strong>predictably and consistently,</strong> which is
+                essential for high-speed platforms operating in constrained
+                environments.
               </p>
             </div>
 
@@ -400,7 +425,9 @@ export default function SAMPATHI1() {
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                These logs enable rapid diagnosis, tuning refinement, and performance validation — especially important for teams iterating builds frequently.
+                These logs enable rapid diagnosis, tuning refinement, and
+                performance validation — especially important for teams
+                iterating builds frequently.
               </p>
             </div>
           </div>
@@ -430,7 +457,9 @@ export default function SAMPATHI1() {
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                It is not a general-purpose controller adapted for speed. Every design decision is guided by <strong>latency, determinism, and control fidelity.</strong>
+                It is not a general-purpose controller adapted for speed. Every
+                design decision is guided by{" "}
+                <strong>latency, determinism, and control fidelity.</strong>
               </p>
             </div>
 
@@ -471,14 +500,16 @@ export default function SAMPATHI1() {
               </h4>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-               SAMPATHI-1 supports predictable boot behaviour, clear system feedback, and straightforward configuration workflows. This enables faster turnaround between build, test, tune, and redeploy cycles — a critical requirement for FPV and interceptor programs.
+                SAMPATHI-1 supports predictable boot behaviour, clear system
+                feedback, and straightforward configuration workflows. This
+                enables faster turnaround between build, test, tune, and
+                redeploy cycles — a critical requirement for FPV and interceptor
+                programs.
               </p>
-
             </div>
           </div>
         </div>
       </section>
-
     </main>
   );
 }

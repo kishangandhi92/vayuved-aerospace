@@ -92,6 +92,12 @@ export default function ContactUs() {
           Contact Vayuved Aerospace | Engineering & Flight Control Systems
         </title>
 
+
+        <meta
+          name="title"
+          content="Contact Vayuved Aerospace | Engineering & Flight Control Systems"
+        />
+
         <meta
           name="description"
           content="Contact Vayuved Aerospace Pvt Ltd for engineering support, flight control units, embedded avionics, and unmanned systems integration."

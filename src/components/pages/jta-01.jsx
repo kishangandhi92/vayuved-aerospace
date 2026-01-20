@@ -10,6 +10,11 @@ const JTA01 = () => {
         </title>
 
         <meta
+          name="title"
+          content="JTA-01 Flight Controller | Pixhawk FMU v6x RT Compatible FCU"
+        />
+
+        <meta
           name="description"
           content="JTA-01 is a Pixhawk FMU v6x RT–compatible flight control unit designed for professional drones, UAVs, VTOL, and autonomous platforms."
         />
