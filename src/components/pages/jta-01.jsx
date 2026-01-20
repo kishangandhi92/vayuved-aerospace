@@ -1,4 +1,5 @@
 import PlaceholderImage from "../../assets/placeholder.png";
+import Compliant_Flight_Control_Architecture from "../../assets/products/Compliant_Flight_Control_Architecture.jpg"
 import { Helmet } from "react-helmet-async";
 
 const JTA01 = () => {
@@ -77,7 +78,7 @@ const JTA01 = () => {
             <div className="flex justify-center">
               <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                 <img
-                  src={PlaceholderImage}
+                  src={Compliant_Flight_Control_Architecture}
                   alt="JTA-01 Standards & Architecture Overview"
                   className="w-full h-full object-cover rounded-xl"
                 />
