@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { label: "Products", to: "/products", hasSubmenu: true },
   { label: "Documentation", to: "https://docs.vayuved.com/category/product---jta-01" },
   { label: "About", to: "/about" },
+  { label: "Contact", to: "/contact" },
 ];
 
 const PRODUCTS = [

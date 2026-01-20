@@ -46,6 +46,7 @@ export default function ContactForm({ product, onSuccess }) {
         body: JSON.stringify({
           ...form,
           product,
+          source: "product"
         }),
       });
 
