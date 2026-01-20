@@ -19,6 +19,14 @@ export default function About() {
           content="Vayuved Aerospace Pvt Ltd is an Indian aerospace engineering company focused on the design and development of flight control units, embedded avionics, and real-time control systems for unmanned platforms."
         />
 
+        <meta property="og:title" content="About Vayuved Aerospace Pvt. Ltd." />
+        <meta
+          property="og:description"
+          content="Vayuved Aerospace Pvt Ltd is an Indian aerospace engineering company focused on the design and development of flight control units, embedded avionics, and real-time control systems for unmanned platforms."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.vayuved.com/about" />
+
         {/* Optional but recommended */}
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://vayuved.com/about" />
