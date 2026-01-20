@@ -1,10 +1,10 @@
-import Hero from "../home/Hero";
-import Pillars from "../home/Pillars";
-import ProductsSection from "../home/ProductsSection";
-import EngineeringCapabilities from "../home/EngineeringCapabilities";
-import DocumentationSection from "../home/DocumentationSection";
-import AboutSection from "../home/AboutSection";
-import ContactSection from "../home/ContactSection";
+import Hero from "../components/home/Hero";
+import Pillars from "../components/home/Pillars";
+import ProductsSection from "../components/home/ProductsSection";
+import EngineeringCapabilities from "../components/home/EngineeringCapabilities";
+import DocumentationSection from "../components/home/DocumentationSection";
+import AboutSection from "../components/home/AboutSection";
+import ContactSection from "../components/home/ContactSection";
 import { Helmet } from "react-helmet-async";
 
 export default function Home() {

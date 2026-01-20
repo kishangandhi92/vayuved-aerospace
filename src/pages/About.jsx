@@ -1,10 +1,10 @@
-import AboutIntro from "../about/AboutIntro";
-import EngineeringFocus from "../about/EngineeringFocus";
+import AboutIntro from "../components/about/AboutIntro";
+import EngineeringFocus from "../components/about/EngineeringFocus";
 import { Helmet } from "react-helmet-async";
-import MissionVision from "../about/MissionVision";
-import Team from "../about/Team";
-import Manufacturing from "../about/Manufacturing";
-import WhyUs from "../about/WhyUs";
+import MissionVision from "../components/about/MissionVision";
+import Team from "../components/about/Team";
+import Manufacturing from "../components/about/Manufacturing";
+import WhyUs from "../components/about/WhyUs";
 
 export default function About() {
   return (

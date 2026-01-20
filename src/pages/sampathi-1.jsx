@@ -1,4 +1,4 @@
-import PlaceholderImage from "../../assets/placeholder.png";
+import PlaceholderImage from "../assets/placeholder.png";
 import { Helmet } from "react-helmet-async";
 export default function SAMPATHI1() {
   return (
