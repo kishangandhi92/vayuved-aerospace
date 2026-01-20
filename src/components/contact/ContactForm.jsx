@@ -200,7 +200,8 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="tel"
-                  placeholder="(+91) 9876543210"
+                  placeholder="9876543210"
+                  maxLength={10}
                   required
                   className={`w-full rounded-lg border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary ${
                     errors.mobile ? "!border-red-500 focus:border-red-500" : ""

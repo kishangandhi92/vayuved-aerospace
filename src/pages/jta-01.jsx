@@ -1,5 +1,5 @@
 import PlaceholderImage from "../assets/placeholder.png";
-import Compliant_Flight_Control_Architecture from "../assets/products/Compliant_Flight_Control_Architecture.jpg"
+import Compliant_Flight_Control_Architecture from "../assets/products/Compliant_Flight_Control_Architecture2.jpg"
 import { Helmet } from "react-helmet-async";
 
 const JTA01 = () => {

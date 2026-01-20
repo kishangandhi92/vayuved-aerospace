@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import BannerImage from "../../assets/banners/banner.png";
+import BannerImage from "../../assets/banners/banner3.png";
 // import BannerImage from "../../assets/banners/hero2.jpg";
 
 export default function Hero() {
@@ -32,7 +32,7 @@ export default function Hero() {
           </a>
 
           <a
-          target="_blank"
+            target="_blank"
             href="https://docs.vayuved.com/category/product---jta-01"
             className="inline-flex items-center rounded-md border-2 border-primary px-6 py-3 text-sm font-medium text-primary hover:bg-gray-100"
           >
@@ -42,11 +42,12 @@ export default function Hero() {
       </div>
 
       {/* Right Visual Placeholder */}
-      <div className="h-[360px] rounded-xl bg-surface flex items-center justify-center">
+      <div className="h-[360px] rounded-xl bg-gray-50 flex items-center justify-center ">
         <img
           src={BannerImage}
           alt="System Architecture Visual"
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover rounded-xl transition-all duration-300 ease-out
+                hover:-translate-y-1"
         />
       </div>
     </section>
