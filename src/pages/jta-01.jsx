@@ -1,5 +1,7 @@
 import PlaceholderImage from "../assets/placeholder.png";
-import Compliant_Flight_Control_Architecture from "../assets/products/Compliant_Flight_Control_Architecture.png"
+import Compliant_Flight_Control_Architecture from "../assets/products/Compliant_Flight_Control_Architecture.png";
+import Deterministic_Real_Time_Multicore_Processing from "../assets/products/Deterministic_Real-Time_Multicore_Processing.jpg";
+import Redundant_Inertial_Sensor_Architecture from "../assets/products/Redundant_Inertial_Sensor_Architecture.jpg";
 import { Helmet } from "react-helmet-async";
 
 const JTA01 = () => {
@@ -95,8 +97,8 @@ const JTA01 = () => {
             <div className="order-2 lg:order-1 flex justify-center">
               <div className="w-full  bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400">
                 <img
-                  src={PlaceholderImage}
-                  alt="JTA-01 Real-Time Control Loop Diagram"
+                  src={Deterministic_Real_Time_Multicore_Processing}
+                  alt="JTA-01 Deterministic Real-Time Multicore Processing"
                   className="w-full h-full object-cover rounded-xl transition-all duration-300 ease-out hover:-translate-y-1"
                 />
               </div>
@@ -159,8 +161,8 @@ const JTA01 = () => {
             <div className="flex justify-center">
               <div className="w-full  bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400">
                 <img
-                  src={PlaceholderImage}
-                  alt="JTA-01 IMU Redundancy Exploded View"
+                  src={Redundant_Inertial_Sensor_Architecture}
+                  alt="JTA-01 Redundant Inertial Sensor Architecture"
                   className="w-full h-full object-cover rounded-xl transition-all duration-300 ease-out hover:-translate-y-1"
                 />
               </div>
