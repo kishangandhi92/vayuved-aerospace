@@ -3,6 +3,9 @@ import Compliant_Flight_Control_Architecture from "../assets/products/Compliant_
 import Deterministic_Real_Time_Multicore_Processing from "../assets/products/Deterministic_Real-Time_Multicore_Processing.jpg";
 import Redundant_Inertial_Sensor_Architecture from "../assets/products/Redundant_Inertial_Sensor_Architecture.jpg";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const JTA01 = () => {
   return (
@@ -45,6 +48,22 @@ const JTA01 = () => {
               multirotor, fixed-wing, VTOL, and unmanned ground or marine
               platforms.
             </p>
+
+            <Link
+              to="specifications"
+              className="
+              inline-flex items-center gap-3
+              rounded-full border border-white
+              bg-transparent px-6 py-3 mt-5
+              text-sm font-medium text-white
+              transition-all duration-300
+              hover:bg-white hover:text-primary
+            "
+            >
+              View Full Technical Specifications
+              <FaArrowRightLong className="ml-1" />
+            </Link>
+            
           </div>
         </div>
       </section>
@@ -397,7 +416,7 @@ const JTA01 = () => {
                 feature.
               </p>
             </div>
-{/* 
+            {/* 
             <div className="w-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
               <img
                 src={PlaceholderImage}
@@ -582,6 +601,37 @@ const JTA01 = () => {
                 field use.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Specification CTA */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+          <h2 className="text-3xl lg:text-4xl font-secondary font-medium text-primary">
+            Technical Specifications
+          </h2>
+
+          <p className="mt-4 text-muted text-lg leading-relaxed">
+            Explore the complete architecture, interfaces, redundancy, and
+            timing design of JTA-01.
+          </p>
+
+          <div className="mt-8">
+            <Link
+              to="specifications"
+              className="
+              inline-flex items-center gap-3
+              rounded-full border border-primary
+              bg-primary px-6 py-3
+              text-sm font-medium text-white
+              transition-all duration-300
+              hover:bg-transparent hover:text-primary
+            "
+            >
+              View Full Technical Specifications
+              <FaArrowRightLong className="ml-1" />
+            </Link>
           </div>
         </div>
       </section>

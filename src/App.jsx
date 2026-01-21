@@ -12,6 +12,7 @@ import SAMPATHI1 from "./pages/sampathi-1";
 import RouteScrollToTop from "./components/common/RouteScrollToTop";
 import About from "./pages/About";
 import ContactUs from "./pages/Contact";
+import Jta01Specs from "./components/specifications/jta-01.specs";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products/jta-01" element={<JTA01 />} />
+          <Route path="/products/jta-01/specifications" element={<Jta01Specs />} />
           <Route path="/products/sampathi-1" element={<SAMPATHI1 />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} /> 
