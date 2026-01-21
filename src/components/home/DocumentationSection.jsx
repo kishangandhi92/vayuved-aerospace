@@ -28,13 +28,13 @@ export default function DocumentationSection() {
               Open Documentation
             </a>
 
-            <a
+            {/* <a
               href="/docs"
               className="inline-flex items-center gap-2 rounded-md border-2 border-primary px-6 py-3 text-sm font-medium text-primary hover:bg-white"
             >
               <FiExternalLink size={18} />
               Product Wiki
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -44,21 +44,21 @@ export default function DocumentationSection() {
             icon={<IoDocumentTextOutline size={20} />}
             title="Integration Guides"
             description="Step-by-step instructions for integrating FCU with your platform."
-            href="/docs/integration"
+           
           />
 
           <DocItem
             icon={<IoDocumentTextOutline size={20} />}
             title="System Architecture"
             description="Detailed technical specifications and system design documentation."
-            href="/docs/architecture"
+          
           />
 
           <DocItem
             icon={<IoDocumentTextOutline size={20} />}
             title="API Reference"
             description="Complete API documentation for software integration and control."
-            href="/docs/api"
+           
           />
         </div>
       </div>
@@ -68,10 +68,9 @@ export default function DocumentationSection() {
 
 /* -------------------------------- */
 
-function DocItem({ icon, title, description, href }) {
+function DocItem({ icon, title, description }) {
   return (
-    <a
-      href={href}
+    <div
       className="flex items-start gap-4 p-2 rounded-lg hover:bg-bg transition"
     >
       <div className="w-10 h-10 bg-gray-200 flex items-center justify-center rounded-md bg-bg text-ink">
@@ -82,6 +81,6 @@ function DocItem({ icon, title, description, href }) {
         <h4 className="font-primary text-base text-ink">{title}</h4>
         <p className="mt-1 text-sm text-steel">{description}</p>
       </div>
-    </a>
+    </div>
   );
 }
