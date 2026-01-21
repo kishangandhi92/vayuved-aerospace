@@ -25,7 +25,7 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-            href="mailto:engineering@vayuved.com"
+            href="mailto:engineering&#64;vayuved&#46;com"
             className="inline-flex items-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-white hover:bg-surface"
           >
             Talk to Engineering <FaArrowRight className="ml-2" />

@@ -30,12 +30,13 @@ export default function ContactSection() {
               <div>
                 <p className="font-secondary text-lg text-black">Email</p>
                 <p className="mt-1 text-steel font-primary">
+                 
                   <a
-                    href="mailto:engineering@vayuved.com"
-                    className="text-primary"
-                  >
-                    engineering@vayuved.com
-                  </a>
+                  href="mailto:engineering&#64;vayuved&#46;com"
+                  className="text-primary"
+                >
+                  engineering&#64;vayuved&#46;com
+                </a>
                 </p>
               </div>
             </div>

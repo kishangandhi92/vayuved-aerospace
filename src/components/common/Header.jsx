@@ -332,7 +332,7 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <NavLink
-          to="mailto:engineering@vayuved.com"
+          to="mailto:engineering&#64;vayuved&#46;com"
           className="hidden md:inline-flex items-center rounded-md bg-primary px-5 py-2 text-sm font-medium text-white hover:bg-surface"
         >
           Talk to Engineering
@@ -383,7 +383,7 @@ export default function Header() {
           {renderNavLinks(true)}
 
           <NavLink
-            to="mailto:engineeringmailto:engineering@vayuved.com"
+            to="mailto:engineering&#64;vayuved&#46;com"
             onClick={() => setOpen(false)}
             className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 font-medium text-white hover:bg-surface"
           >

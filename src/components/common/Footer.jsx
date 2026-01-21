@@ -92,10 +92,10 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm font-primary">
               <li>
                 <a
-                  href="mailto:engineering@vayuved.com"
+                  href="mailto:engineering&#64;vayuved&#46;com"
                   className="hover:text-white transition-colors"
                 >
-                  engineering@vayuved.com
+                  engineering&#64;vayuved&#46;com
                 </a>
               </li>
               <li className="text-gray-400">Hyderabad, India</li>
