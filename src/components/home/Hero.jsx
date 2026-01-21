@@ -4,7 +4,7 @@ import BannerImage from "../../assets/banners/banner3.png";
 
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-10 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="max-w-7xl mx-auto px-6 py-10 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       {/* Left Content */}
       <div>
         <h1 className="text-4xl lg:text-5xl tracking-tight text-primary font-secondary">
@@ -42,11 +42,11 @@ export default function Hero() {
       </div>
 
       {/* Right Visual Placeholder */}
-      <div className="h-[360px] rounded-xl bg-gray-50 flex items-center justify-center ">
+      <div className="lg:h-[360px] rounded-xl bg-gray-50 flex items-center justify-center ">
         <img
           src={BannerImage}
           alt="System Architecture Visual"
-          className="w-full h-full object-cover rounded-xl transition-all duration-300 ease-out
+          className="w-full lg:h-full lg:object-cover rounded-xl transition-all duration-300 ease-out
                 hover:-translate-y-1"
         />
       </div>

@@ -24,10 +24,7 @@ export default function Footer() {
 
             <ul className="mt-4 space-y-3 text-sm font-primary">
               <li>
-                <a
-                  href="/about"
-                  className="hover:text-white transition-colors"
-                >
+                <a href="/about" className="hover:text-white transition-colors">
                   About Us
                 </a>
               </li>
@@ -51,7 +48,7 @@ export default function Footer() {
             </ul>
           </div>
 
-           <div>
+          <div>
             <h4 className="font-secondary font-semibold text-sm tracking-wide text-white">
               Products
             </h4>
@@ -66,10 +63,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href=""
-                  className="hover:text-white transition-colors"
-                >
+                <a href="" className="hover:text-white transition-colors">
                   JTA-02
                 </a>
               </li>
@@ -82,10 +76,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href=""
-                  className="hover:text-white transition-colors"
-                >
+                <a href="" className="hover:text-white transition-colors">
                   JTA-03
                 </a>
               </li>

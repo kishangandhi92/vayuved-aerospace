@@ -326,7 +326,7 @@ export default function Header() {
         </NavLink>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-10 text-sm">
           {renderNavLinks()}
         </nav>
 
