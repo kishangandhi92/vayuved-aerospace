@@ -120,6 +120,7 @@ export default function Header() {
                       <NavLink
                         key={product.name}
                         to={product.to}
+                        onClick={() => setProductsOpen(false)}
                         className="
                         rounded-lg border border-black/5
                         p-5
