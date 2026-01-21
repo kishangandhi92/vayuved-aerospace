@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-surface text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-10">
         {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
             <h3 className="font-secondary font-semibold text-lg text-white">
@@ -25,10 +25,10 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm font-primary">
               <li>
                 <a
-                  href="/#products"
+                  href="/about"
                   className="hover:text-white transition-colors"
                 >
-                  Products
+                  About Us
                 </a>
               </li>
               <li>
@@ -46,6 +46,47 @@ export default function Footer() {
                   className="hover:text-white transition-colors"
                 >
                   Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+           <div>
+            <h4 className="font-secondary font-semibold text-sm tracking-wide text-white">
+              Products
+            </h4>
+
+            <ul className="mt-4 space-y-3 text-sm font-primary">
+              <li>
+                <a
+                  href="/products/jta-01"
+                  className="hover:text-white transition-colors"
+                >
+                  JTA-01
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  className="hover:text-white transition-colors"
+                >
+                  JTA-02
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/products/sampathi-1"
+                  className="hover:text-white transition-colors"
+                >
+                  SAMPATHI - I
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  className="hover:text-white transition-colors"
+                >
+                  JTA-03
                 </a>
               </li>
             </ul>
