@@ -1,5 +1,5 @@
 import PlaceholderImage from "../assets/placeholder.png";
-import Compliant_Flight_Control_Architecture from "../assets/products/Compliant_Flight_Control_Architecture2.jpg"
+import Compliant_Flight_Control_Architecture from "../assets/products/Compliant_Flight_Control_Architecture2.png"
 import { Helmet } from "react-helmet-async";
 
 const JTA01 = () => {
@@ -76,11 +76,11 @@ const JTA01 = () => {
             </div>
 
             <div className="flex justify-center">
-              <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+              <div className="w-full  bg-gray-50 rounded-2xl flex items-center justify-center text-gray-400">
                 <img
                   src={Compliant_Flight_Control_Architecture}
                   alt="JTA-01 Standards & Architecture Overview"
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-xl transition-all duration-300 ease-out hover:-translate-y-1"
                 />
               </div>
             </div>
@@ -93,11 +93,11 @@ const JTA01 = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 flex justify-center">
-              <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+              <div className="w-full  bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
                   alt="JTA-01 Real-Time Control Loop Diagram"
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-xl transition-all duration-300 ease-out hover:-translate-y-1"
                 />
               </div>
             </div>
@@ -157,11 +157,11 @@ const JTA01 = () => {
             </div>
 
             <div className="flex justify-center">
-              <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
+              <div className="w-full  bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
                   alt="JTA-01 IMU Redundancy Exploded View"
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-xl transition-all duration-300 ease-out hover:-translate-y-1"
                 />
               </div>
             </div>
