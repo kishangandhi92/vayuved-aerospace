@@ -1,6 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
 import BannerImage from "../../assets/banners/banner3.png";
-// import BannerImage from "../../assets/banners/hero2.jpg";
 
 export default function Hero() {
   return (
@@ -10,12 +9,6 @@ export default function Hero() {
         <h1 className="text-4xl lg:text-5xl tracking-tight text-primary font-secondary">
           Mission-Critical Flight Control Systems Engineered for Reliability
         </h1>
-
-        {/* <p className="mt-6 max-w-xl text-lg text-muted">
-          Our flight control units are engineered for predictable system
-          behaviour, stability, and repeatable performance under real-world UAV
-          operating conditions.
-        </p> */}
 
         <p className="mt-6 max-w-xl text-lg text-muted">
           Our design philosophy emphasizes clear system interfaces, robust
