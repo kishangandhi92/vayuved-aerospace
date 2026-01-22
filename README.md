@@ -7,7 +7,7 @@ It is a **static, SEO-friendly React application** built using **Vite + React + 
 
 ## Tech Stack
 
-- **Framework:** React 19
+- **Framework:** React 18
 - **Bundler:** Vite
 - **Routing:** React Router DOM
 - **Styling:** Tailwind CSS v4

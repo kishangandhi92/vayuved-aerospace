@@ -7,7 +7,6 @@ import ScrollToTop from "./components/common/ScrollToTop";
 import Home from "./pages/Home";
 import JTA01 from "./pages/jta-01";
 import NotFound from "./pages/NotFound";
-import { Toaster } from "react-hot-toast";
 import SAMPATHI1 from "./pages/sampathi-1";
 import RouteScrollToTop from "./components/common/RouteScrollToTop";
 import About from "./pages/About";
@@ -39,7 +38,6 @@ export default function App() {
 
         {/* ✅ UI scroll button */}
         <ScrollToTop />
-        <Toaster position="top-right" />
       </div>
     </Router>
   );
