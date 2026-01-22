@@ -17,6 +17,10 @@ It is a **static, SEO-friendly React application** built using **Vite + React + 
 
 ---
 
+## Pre-requisites
+- Node JS v20 or above
+- VS Code (latest)
+
 ## Project Architecture Overview
 
 This project follows a **page-driven + section-based architecture**.
@@ -147,6 +151,60 @@ This will create a `/dist` folder containing:
 ## Deployment (Hostinger)
 
 Upload contents of dist folder to hostinger `public_html` directory using FileZilla.
+
+---
+
+---
+
+## Development & Change Management Workflow
+
+To ensure stability of the production website and avoid unintended breakages, **all changes must follow the workflow below**:
+
+### 1. Create a Separate Branch
+- Never make changes directly on the `main` branch.
+- Create a new branch for every feature, fix, or content update.
+- Use a meaningful branch name, for example:
+  - `feature/product-copy-update`
+  - `fix/contact-form-validation`
+  - `content/homepage-text-update`
+
+```bash
+git checkout -b feature/your-branch-name
+```
+
+### 2. Make & Test Changes Locally
+- Make & Test Changes Locally
+- Run the project locally and verify:
+    - Pages load correctly
+    - Navigation works as expected
+    - No console errors
+    - Content and layout are correct
+
+### 3. Test Production Build Locally
+- Before merging, always test the production build:
+```bash
+npm run build
+npm run preview
+```
+- Ensure all routes work correctly
+- Verify static assets load properly
+- Confirm no broken links or missing images
+
+### 4. Merge into main branch
+- Only after successful local and server testing:
+    - Merge your branch into main
+    - Keep commits clean and well-described
+
+```bash
+git checkout main
+git merge feature/your-branch-name
+```
+
+### Why This Workflow Matters
+- Prevents breaking the live website
+- Makes rollbacks easier if issues occur
+- Ensures consistent, verified deployments
+- Encourages clean and maintainable code
 
 ---
 
