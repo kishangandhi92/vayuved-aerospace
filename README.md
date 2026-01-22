@@ -64,8 +64,9 @@ Example routes:
 - `/` → Home
 - `/about` → About
 - `/contact` → Contact
-- `/products/jta-01`
-- `/products/sampathi-1`
+- `/products/jta-01` → JTA-01 Product Page
+- `/products/jta-01/specifications` → JTA-01 Specification Page
+- `/products/sampathi-1` → SAMPATHI-I Product Page
 - `*` → 404 Page
 
 ---
