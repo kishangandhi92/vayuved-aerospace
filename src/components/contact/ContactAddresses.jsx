@@ -55,17 +55,6 @@ const ContactAddresses = () => {
               </a>
             </div>
           ))}
-          {/* <div
-            className="bg-gray-50 border border-border rounded-xl p-8 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-gray-300
-  "
-          >
-            <h3 className="font-secondary text-lg text-ink">India</h3>
-
-            <p className="mt-3 text-sm leading-relaxed text-muted font-primary">
-              20706, Willow Block , IFFG , 13th Phase KPHB , Hyderabad ,
-              Telangana, India -500085
-            </p>
-          </div> */}
         </div>
       </div>
     </section>

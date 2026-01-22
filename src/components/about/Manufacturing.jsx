@@ -2,59 +2,6 @@ import { HiOutlineCog, HiOutlineCube, HiOutlineDocumentText, HiOutlineShieldChec
 
 export default function Manufacturing() {
   return (
-    // <section className="bg-gray-100 py-24">
-     
-    //   <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-    
-    //     <div>
-    //       <h2 className="font-secondary text-4xl text-ink">
-    //          Manufacturing &amp; Made in India
-    //       </h2>
-
-    //       <p className="mt-10 max-w-xl font-primary text-lg text-steel leading-relaxed">
-    //        Vayuved Aerospace is committed to{" "}
-    //         <strong className="text-gray-900">
-    //           designing and developing products in India
-    //         </strong>
-    //         , with a clear focus on{" "}
-    //         <strong className="text-gray-900">
-    //           local engineering capability and long-term manufacturability
-    //         </strong>
-    //         .
-    //       </p>
-
-    //        <p className="mt-6 max-w-xl font-primary text-lg text-gray-700 leading-relaxed">
-    //       This philosophy supports India’s broader objective of building{" "}
-    //       <strong className="text-gray-900">
-    //         self-reliant aerospace and defence electronics capability
-    //       </strong>
-    //       .
-    //     </p>
-    //     </div>
-
-    //     <div className="bg-white rounded-2xl border border-black/5 shadow-sm p-8 space-y-2">
-    //       <ItemCard
-    //         icon={<HiOutlineCog size={20} />}
-    //         title="Design for manufacturability and testability"
-    //       />
-
-    //       <ItemCard
-    //         icon={<HiOutlineCube size={20} />}
-    //         title="Component availability and lifecycle awareness"
-    //       />
-
-    //       <ItemCard
-    //         icon={<HiOutlineDocumentText size={20} />}
-    //         title="Traceable hardware revisions"
-    //       />
-
-    //       <ItemCard
-    //         icon={<HiOutlineShieldCheck size={20} />}
-    //         title="Alignment with Indian defence and institutional procurement expectations"
-    //       />
-    //     </div>
-    //   </div>
-    // </section>
      <section className="bg-surface py-24">
      
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
