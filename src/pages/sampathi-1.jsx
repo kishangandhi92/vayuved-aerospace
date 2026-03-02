@@ -62,7 +62,7 @@ export default function SAMPATHI1() {
        */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
                 Deterministic Real-Time Control Architecture
@@ -97,7 +97,7 @@ export default function SAMPATHI1() {
               </p>
             </div>
 
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
@@ -105,7 +105,7 @@ export default function SAMPATHI1() {
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -113,8 +113,8 @@ export default function SAMPATHI1() {
       {/* STM32H7-Centric Performance Design */}
       <section className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 flex justify-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
+            {/* <div className="order-2 lg:order-1 flex justify-center">
               <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
@@ -122,7 +122,7 @@ export default function SAMPATHI1() {
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
@@ -166,7 +166,7 @@ export default function SAMPATHI1() {
        */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
                 Sensor Integrity Focused Design
@@ -195,7 +195,7 @@ export default function SAMPATHI1() {
               </p>
             </div>
 
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
@@ -203,7 +203,7 @@ export default function SAMPATHI1() {
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -211,8 +211,8 @@ export default function SAMPATHI1() {
       {/* High-Rate Motor Output and ESC Compatibility */}
       <section className="bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 flex justify-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
+            {/* <div className="order-2 lg:order-1 flex justify-center">
               <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
@@ -220,7 +220,7 @@ export default function SAMPATHI1() {
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
@@ -255,7 +255,7 @@ export default function SAMPATHI1() {
       {/* Interfaces Designed for FPV and Interceptor Builds */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 font-secondary">
                 Interfaces Designed for FPV and Interceptor Builds
@@ -290,7 +290,7 @@ export default function SAMPATHI1() {
               </p>
             </div>
 
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <div className="w-full  bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">
                 <img
                   src={PlaceholderImage}
@@ -298,7 +298,7 @@ export default function SAMPATHI1() {
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
